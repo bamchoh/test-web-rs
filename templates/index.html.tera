@@ -1,0 +1,15 @@
+{% extends "base.html.tera" %}
+{% block title %}{{ title }}{% endblock title %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock head %}
+{% block content %}
+  <h1>Index</h1>
+  <p class="important">
+    Welcome to {{ username }}'s page.</br>
+    {{ message }}</br>
+  </p>
+{% endblock content %}
